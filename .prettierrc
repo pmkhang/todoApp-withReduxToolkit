@@ -1,0 +1,124 @@
+{
+   "arrowParens": "always",
+   "bracketSpacing": true,
+   "embeddedLanguageFormatting": "auto",
+   "htmlWhitespaceSensitivity": "css",
+   "insertPragma": false,
+   "jsxSingleQuote": false,
+   "printWidth": 120,
+   "proseWrap": "preserve",
+   "quoteProps": "as-needed",
+   "requirePragma": false,
+   "semi": true,
+   "singleQuote": true,
+   "tabWidth": 3,
+   "trailingComma": "all",
+   "useTabs": false,
+   "vueIndentScriptAndStyle": false,
+   "overrides": [
+      {
+         "files": "*.html",
+         "options": {
+            "printWidth": 120,
+            "proseWrap": "preserve",
+            "htmlWhitespaceSensitivity": "css"
+         }
+      },
+      {
+         "files": "*.css",
+         "options": {
+            "printWidth": 120,
+            "proseWrap": "preserve"
+         }
+      },
+      {
+         "files": ["*.js", "*.jsx"],
+         "options": {
+            "arrowParens": "always",
+            "bracketSpacing": true,
+            "embeddedLanguageFormatting": "auto",
+            "htmlWhitespaceSensitivity": "css",
+            "insertPragma": false,
+            "jsxSingleQuote": false,
+            "printWidth": 120,
+            "proseWrap": "preserve",
+            "quoteProps": "as-needed",
+            "requirePragma": false,
+            "semi": true,
+            "singleQuote": true,
+            "tabWidth": 3,
+            "trailingComma": "all",
+            "useTabs": false
+         }
+      },
+      {
+         "files": ["*.ts", "*.tsx"],
+         "options": {
+            "arrowParens": "always",
+            "bracketSpacing": true,
+            "embeddedLanguageFormatting": "auto",
+            "htmlWhitespaceSensitivity": "css",
+            "insertPragma": false,
+            "jsxSingleQuote": false,
+            "printWidth": 120,
+            "proseWrap": "preserve",
+            "quoteProps": "as-needed",
+            "requirePragma": false,
+            "semi": true,
+            "singleQuote": true,
+            "tabWidth": 3,
+            "trailingComma": "all",
+            "useTabs": false,
+            "vueIndentScriptAndStyle": false
+         }
+      },
+      {
+         "files": ["*.c", "*.cpp"],
+         "options": {
+            "printWidth": 120,
+            "tabWidth": 3,
+            "useTabs": false
+         }
+      },
+      {
+         "files": ["*.cs"],
+         "options": {
+            "printWidth": 120,
+            "tabWidth": 3,
+            "useTabs": false
+         }
+      },
+      {
+         "files": ["*.java"],
+         "options": {
+            "printWidth": 120,
+            "tabWidth": 3,
+            "useTabs": false
+         }
+      },
+      {
+         "files": ["*.py"],
+         "options": {
+            "printWidth": 120,
+            "tabWidth": 4,
+            "useTabs": false
+         }
+      },
+      {
+         "files": ["*.dart"],
+         "options": {
+            "printWidth": 120,
+            "tabWidth": 3,
+            "useTabs": false
+         }
+      },
+      {
+         "files": ["*.rb"],
+         "options": {
+            "printWidth": 120,
+            "tabWidth": 3,
+            "useTabs": false
+         }
+      }
+   ]
+}
