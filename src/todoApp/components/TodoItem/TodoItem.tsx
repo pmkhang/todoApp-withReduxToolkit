@@ -1,5 +1,5 @@
 import { Todo } from 'types/Todo.type';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 interface TodoItemType {
    todo: Todo;
@@ -26,16 +26,21 @@ export default function TodoItem({
          setTempTitle(todo.title);
          setIsEditing(true);
       }
-      if (editInputRef.current) {
+   };
+
+   useEffect(() => {
+      if (isEditing && editInputRef.current) {
          editInputRef.current.focus();
       }
-   };
+   }, [isEditing]);
 
    const handleEndEdit = (e: React.KeyboardEvent<HTMLInputElement>) => {
       if (e.key === 'Enter') {
          if (newTitle.trim() !== '') {
             handleEditTodo(todo.id, newTitle);
             setIsEditing(false);
+         } else if (newTitle.trim() === '') {
+            handleDelete(todo.id);
          }
       }
    };
