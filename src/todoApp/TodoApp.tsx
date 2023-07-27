@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import CreateTodo from './components/CreateTodo';
-import StatusTodo from './components/StatusTodo/StatusTodo';
+import StatusTodo from './components/StatusTodo';
 import { RootState } from 'redux/store';
 import TodoList from './components/TodoList';
 
