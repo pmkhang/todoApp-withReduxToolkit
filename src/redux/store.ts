@@ -3,7 +3,7 @@ import TodoSlice from './Slice/Todo.slice';
 
 const store = configureStore({
    reducer: { Todo: TodoSlice },
-   // preloadedState: loadStateFromLocalStorage(),
+   preloadedState: loadStateFromLocalStorage(),
 });
 
 store.subscribe(() => {

@@ -15,11 +15,10 @@ const CreateTodo = () => {
    const handleAddTodo = (e: React.KeyboardEvent<HTMLInputElement>) => {
       if (e.key === 'Enter') {
          if (todoData.title.trim() !== '') {
-            // Make sure the title is not empty or just spaces
             const todoDataWithID = { ...todoData };
             dispatch(addTodo(todoDataWithID));
          }
-         setTodoData({ ...todoData, title: '' }); // Reset only the title to clear the input field
+         setTodoData({ ...todoData, title: '' });
       }
    };
 
