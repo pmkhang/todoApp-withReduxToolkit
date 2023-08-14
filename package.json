@@ -1,7 +1,7 @@
 {
    "name": "react-18",
    "version": "0.1.0",
-   "homepage": "https://pmkhang.github.io",
+   "homepage": "https://pmkhang.github.io/todoApp-withReduxToolkit",
    "private": true,
    "dependencies": {
       "@emotion/react": "^11.11.1",
