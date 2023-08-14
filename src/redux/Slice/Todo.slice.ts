@@ -22,7 +22,7 @@ const todoSlice = createSlice({
    reducers: {
       addTodo: {
          reducer: (state, action: PayloadAction<Todo>) => {
-            state.todoList.push(action.payload);
+            state.todoList.unshift(action.payload);
          },
          prepare: (todo: Omit<Todo, 'id'>) => ({
             payload: {
