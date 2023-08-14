@@ -29,27 +29,22 @@ const StatusTodo = () => {
          </span>
          <ul className="filters">
             <li>
-               <a className={filter === 'all' ? 'selected' : ''} href="#/" onClick={() => handleFilterChange('all')}>
+               <button className={filter === 'all' ? 'selected' : ''} onClick={() => handleFilterChange('all')}>
                   All
-               </a>
+               </button>
             </li>
             <li>
-               <a
-                  className={filter === 'active' ? 'selected' : ''}
-                  href="#/active"
-                  onClick={() => handleFilterChange('active')}
-               >
+               <button className={filter === 'active' ? 'selected' : ''} onClick={() => handleFilterChange('active')}>
                   Active
-               </a>
+               </button>
             </li>
             <li>
-               <a
+               <button
                   className={filter === 'completed' ? 'selected' : ''}
-                  href="#/completed"
                   onClick={() => handleFilterChange('completed')}
                >
                   Completed
-               </a>
+               </button>
             </li>
          </ul>
          {todoList.some((todo) => todo.completed) && (
